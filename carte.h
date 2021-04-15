@@ -15,9 +15,6 @@ public:
      static string s_couleur[4];
      string toString();
      int getOrdre();
-     void ajouteDessous(Carte *c);
-
-
 };
 
 #endif // CARTE_H
