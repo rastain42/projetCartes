@@ -1,5 +1,6 @@
 #include "cartes.h"
 #include <sstream>
+#include <list>
 
 Cartes::Cartes(int nb_tas)
 {
@@ -48,3 +49,26 @@ int Cartes::taille()
 {
     return m_tas.size();
 }
+
+void Cartes::ajoute(Carte *c)
+{
+    m_tas.push_back(c);
+    return;
+}
+
+void Cartes::ajouteDessous(Carte *c)
+{
+    m_tas.push_front(c);
+    return;
+}
+
+void Cartes::ajouteDessous(Cartes tas)
+{
+    for (auto it : tas.m_tas) {
+        ajouteDessous(it);
+    }
+
+}
+
+
+

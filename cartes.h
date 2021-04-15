@@ -9,6 +9,8 @@ class Cartes
 {
 private:
     list<Carte *> m_tas;
+    list<Carte *> m_j1;
+    list<Carte *> m_j2;
 
 public:
     Cartes(int nb_tas=1);// par défaut un tas de 52 cartes
@@ -16,7 +18,7 @@ public:
     string toString();
     void supListe();
     int taille();
-    Cartes *ajoute();
+    void *ajoute(Carte c);
 };
 
 #endif // CARTES_H

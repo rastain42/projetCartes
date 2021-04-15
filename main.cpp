@@ -28,9 +28,6 @@ void testTas(){
 }
 int main()
 {
-//    testAlea();
-//    Carte *mycard = new Carte(5, 2);
-//    cout<<mycard->toString()<<endl;
     testTas();
     return 0;
 }
