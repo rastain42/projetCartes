@@ -25,6 +25,8 @@ void testTas(){
     Carte *c=sabot->enleve();
     cout<<"J'ai enlevé "<<c->toString()<<endl;
     cout<<sabot->toString()<<endl;
+    Cartes *j1=new Cartes();
+    j1->ajoute(c);
 }
 int main()
 {

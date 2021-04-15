@@ -26,7 +26,7 @@ int Carte::getOrdre()
     return m_ordre;
 }
 
-void Cartes::ajouteDessous(Carte *c)
+void Carte::ajouteDessous(Carte *c)
 {
     m_tas.push_front(c);
     return;
