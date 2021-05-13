@@ -18,7 +18,7 @@ public:
     int taille();
     void ajoute(Carte *c);
     void ajouteDessous(Carte *c);
-    void ajouteDessous(Cartes tas);
+    void ajouteTasDessous(Cartes tas);
 };
 
 #endif // CARTES_H

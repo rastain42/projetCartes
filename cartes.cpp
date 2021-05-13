@@ -40,9 +40,11 @@ string Cartes::toString()
 
 void Cartes::supListe()
 {
-    for(auto&& child : m_tas){
-        delete child;
+    list<Carte *>::iterator it;
+    for(it=m_tas.begin();it!=m_tas.end();it++) {
+        m_tas.erase(it);
     }
+
 }
 
 int Cartes::taille()
@@ -62,15 +64,10 @@ void Cartes::ajouteDessous(Carte *c)
     return;
 }
 
-void Cartes::ajouteDessous(Cartes tas)
+void Cartes::ajouteTasDessous(Cartes tas)
 {
     for (auto it : tas.m_tas) {
         ajouteDessous(it);
     }
 
 }
-
-
-
-
-

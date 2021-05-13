@@ -8,10 +8,12 @@ SOURCES += \
         cartes.cpp \
         main.cpp \
         monalea.cpp \
+        moteurbataille.cpp \
         parametres.cpp
 
 HEADERS += \
     carte.h \
     cartes.h \
     monalea.h \
+    moteurbataille.h \
     parametres.h

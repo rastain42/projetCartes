@@ -16,8 +16,6 @@ void testAlea(){
     cout<<endl;
 }
 
-
-
 void testTas(){
     Cartes *sabot=new Cartes();
     cout<<sabot->toString()<<endl;
