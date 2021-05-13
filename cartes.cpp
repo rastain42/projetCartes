@@ -28,6 +28,14 @@ Carte *Cartes::enleve()
     return c;
 }
 
+Carte *Cartes::enleveAlea(int aleaNbr)
+{
+    std::list<Carte *>::iterator it = m_tas.begin();
+    std::advance(it, aleaNbr);
+    m_tas.remove(*it);
+    return *it;
+}
+
 
 string Cartes::toString()
 {

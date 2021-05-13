@@ -13,6 +13,7 @@ private:
 public:
     Cartes(int nb_tas=1);// par défaut un tas de 52 cartes
     Carte *enleve(); // enleve et retourne la carte du dessus(début de la liste)
+    Carte *enleveAlea(int aleaNbr); // enleve et retourne la carte du dessus(début de la liste)
     string toString();
     void supListe();
     int taille();

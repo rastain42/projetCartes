@@ -7,8 +7,8 @@ MoteurBataille::MoteurBataille()
 {
     Cartes *sabot = new Cartes(1);
     while (sabot->taille()>0) {
-        m_tasj1.ajoute(sabot->enleveAlea());
-        m_tasj2.ajoute(sabot->enleveAlea());
+        m_tasj1.ajoute(sabot->enleveAlea(50));
+        m_tasj2.ajoute(sabot->enleveAlea(50));
     }
     delete sabot;
 }
