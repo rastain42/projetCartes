@@ -11,7 +11,8 @@ Le gagnant est celui qui a le plus de cartes a la fin de la partie.
 
 ## Utilisation 
 * Pour lancer le jeu avec un interpreteur C++ tel que qt creator 4 :
-* `bataille.exe`
+* Se rendre dans le fichier parent de `bataille.exe` et le lancer
+* 
 
 ## Axes d'amélioration
 * une interface graphique dévelopée avec ??
