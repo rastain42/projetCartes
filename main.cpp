@@ -2,32 +2,19 @@
 #include "carte.h"
 #include "cartes.h"
 #include "parametres.h"
-
+#include "moteurbataille.h"
 
 using namespace std;
 #include "parametres.h"
 
-void testAlea(){
-    cout << "Test de nombres aléatoires:"<<endl;
-    for(int i=0; i<200;i++)
-    {
-        cout<<Parametres::generateurAlea->get(Parametres::nbMax)<<"\t";
-    }
-    cout<<endl;
-}
 
-void testTas(){
-    Cartes *sabot=new Cartes();
-    cout<<sabot->toString()<<endl;
-    // on enlève une carte
-    Carte *c=sabot->enleve();
-    cout<<"J'ai enlevé "<<c->toString()<<endl;
-    cout<<sabot->toString()<<endl;
-    Cartes *j1=new Cartes();
-    j1->ajoute(c);
-}
-int main()
-{
-    testTas();
-    return 0;
+int main(){
+
+ MoteurBataille *jeu = new MoteurBataille();
+ cout<<"Bienvenue dans ce jeu de bataille"<<endl;
+ cout<<"52 cartes ont étées distribuées entre les deux joueurs"<<endl;
+ jeu->mancheToString(jeu->joue1Manche());
+
+ delete jeu;
+ return 0;
 }

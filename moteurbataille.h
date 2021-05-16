@@ -13,7 +13,6 @@ public:
     MoteurBataille();
     virtual ~MoteurBataille();
     int joue1Manche();
-    void ajoutePile(Cartes j);
     string mancheToString(int i);
     string egaliteToString();
     string victoireToString(string j);
